@@ -6,7 +6,7 @@ rp.benvenuto()
 interuttore = True
 while interuttore == True:
     # Settaggio dei parametri
-    griglia_partenza = [ '#', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ' ]
+    griglia_partenza = [ '#', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
     marker1, marker2 = rp.player_input()
     a_chi_tocca = rp.inizia_per_primo()
     if a_chi_tocca == 'Giocatore 1':
@@ -27,9 +27,9 @@ while interuttore == True:
         if a_chi_tocca == 'Giocatore 1':
             rp.mostra_griglia(griglia_partenza)
             pos = rp.scelta(griglia_partenza)
-            rp.posiziona_marker(griglia_partenza,marker1,pos)
+            rp.posiziona_marker(griglia_partenza, marker1,pos)
             rp.mostra_griglia(griglia_partenza)
-            if rp.controlla_vincitore(griglia_partenza,marker1):
+            if rp.controlla_vincitore(griglia_partenza, marker1):
                 print('Complimenti', a_chi_tocca, '!!! Hai vinto!!!')
                 partita = False
             else:
